@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 1500px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  color: #581845;
+  background-color: #FFDD00;
+}
+
+header {
+  background-color: #0057B7;
+  width: 100%;;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 800px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 15px;
+}
+
+.parallax {
+  background-color: #0057B7;
+
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parallax::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #FFDD00, transparent);
+  z-index: 1;
+}
+
+.parallax img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.cv .wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+footer .wrapper {
+  padding: 15px 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
