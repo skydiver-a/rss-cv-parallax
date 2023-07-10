@@ -14,10 +14,20 @@
   <header>
     <div class="wrapper">
       <nav class="navigation">
-        <a href="#1">Personal</a>
-        <a href="#2">Work & Education</a>
-        <a href="#3">Skills & Hobbies</a>
-        <a href="#4">Contacts</a>
+        <ul>
+          <li>
+            <a href="#1">Personal</a>
+          </li>
+          <li>
+            <a href="#2">Work & Education</a>
+          </li>
+          <li>
+            <a href="#3">Skills & Hobbies</a>
+          </li>
+          <li>
+            <a href="#4">Contacts</a>
+          </li>
+        </ul>       
       </nav>
     </div>
   </header>
@@ -34,35 +44,119 @@
         <h2 id="1">Personal</h2>
         <p>My name is Anna Kravchenko, I'm fourty years old and I honestly believe that now is the time to change jobs.</p>
         <h2 id="2">Work & Education</h2>
-        <p>1995 - 1997 PC assembly<br>
-          1998 - 2003 Moscow Technical University of communications and informatics<br>
-          2000 - 2002 DB operator<br>
-          2002 - 2006 PC Serviceman<br>
-          2008 - 2021 DB operator<br>
-          2022 - volunteer & student 
-        </p>
+        <ul>
+          <li>1995 - 1997 PC assembly</li>
+          <li>1998 - 2003 Moscow Technical University of communications and informatics</li>
+          <li>2000 - 2002 DB operator</li>
+          <li>2002 - 2006 PC Serviceman</li>
+          <li>2008 - 2021 DB operator</li>
+          <li>2022 - volunteer & student
+            <ul>
+              <li>
+                <i class="fas fa-music"></i><a href="https://rolling-scopes-school.github.io/skydiver-a-JSFEPRESCHOOL/js30-1-2/"> Audio Player</a>
+              </li>
+              <li>
+                <i class="fas fa-image"></i><a href="https://rolling-scopes-school.github.io/skydiver-a-JSFEPRESCHOOL/js30-2-2/"> Unsplash API</a>
+              </li>
+              <li>
+                <i class="fas fa-paw"></i><a href="https://rolling-scopes-school.github.io/skydiver-a-JSFEPRESCHOOL/js30-3-2/"> Memory Cat</a>
+              </li>
+            </ul>
+          </li> 
+        </ul>
         <h2 id="3">Skills & Hobbies</h2>
-        <p>Languages:<br>
-          <i class="fa fa-globe"></i> Russian - native<br>
-          <i class="fa fa-globe"></i> English - A2 - B1<br>
-          <i class="fa fa-globe"></i> Ukrainian - A2 - B1<br>
-          <i class="fa fa-globe"></i> Turkish - A0 - A1<br>
-          <i class="fa fa-globe"></i> Spanish - A0 - A1<br>
-          Technical Skills:<br>
-          <i class="fa fa-network-wired"></i> Computer Assembly, Network configuration
-          Coding Skills:<br>
-          <i class="fa fa-code"></i> HTML, CSS, JavaScript, Python & C++ Basic
-          Environment:<br>
-          <i class="fa fa-code-branch"></i> Git, GitHub, PyCharm, VSCode, Qt Creator, Adobe PhotoShop<br>
-          Hobbies:<br>
-          <i class="fa fa-brain"></i> Math mind-breakers, Running, Drawing, Gardening
-        </p>
+        <ul>
+          <li><i class="fa fa-globe"></i> Languages:
+            <ul>
+              <li>Russian - native</li>
+              <li>English - A2 - B1</li>
+              <li>Ukrainian - A2 - B1</li>
+              <li>Turkish - A0 - A1</li>
+              <li>Spanish - A0 - A1</li>
+            </ul>
+          </li>
+          <li><i class="fa fa-network-wired"></i> Technical Skills:
+            <ul>
+              <li>Computer Assembly</li>
+              <li>Network configuration</li>
+            </ul>
+          </li>
+          <li><i class="fa fa-code"></i> Coding Basic Skills:
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript
+                <pre>
+  function columnSum(dataArray) {
+    dataArray = dataArray[0].map((col, c) => {
+      data.map((row, r) => data[r][c]);
+    });
+    return dataArray.map(el => {
+      el.reduce((acc, i) => acc + i);
+    });
+  }
+                </pre>
+              </li>
+              <li>Python
+                <pre>
+  import requests
+
+  url = 'http://wttr.in/?0T'
+  response = requests.get(url)
+  print(response.text)
+                </pre>
+              </li>
+              <li>C++
+                <pre>
+  #include &lt;bits/stdc++.h&gt;
+  using namespace std;
+
+  int main() {
+    set &lt;int&gt; s;
+    int n;
+    cin &gt;&gt; n;
+
+    while(cin &gt;&gt; n) {
+      cout &lt;&lt; (s.insert(n).second ? "NO\n" : "YES\n");
+    }
+    return 0;
+  }
+                </pre>
+              </li>
+            </ul>
+          </li>
+          <li><i class="fa fa-code-branch"></i> Environment:
+            <ul>
+              <li>Linux Mint</li>
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>PyCharm</li>
+              <li>VSCode</li>
+              <li>Qt Creator</li>
+              <li>Adobe PhotoShop</li>
+            </ul>
+          </li>
+          <li><i class="fa fa-brain"></i> Hobbies:
+            <ul>
+              <li>Math mind-breakers</li>
+              <li>Running</li>
+              <li>Drawing</li>
+              <li>Gardening</li>
+            </ul>
+          </li>         
+        </ul>
         <h2 id="4">Contacts</h2>
-        <p>
-          <i class="fa fa-phone" aria-hidden="true"></i> +7 (916) 206-83-87<br>
-          <i class="fa fa-at" aria-hidden="true"></i> flamedance.ann&#64;gmail.com<br>
-          <i class="fab fa-telegram" aria-hidden="true"></i> &#64;flamedance<br>
-        </p>
+        <ul>
+          <li>
+            <i class="fa fa-phone" aria-hidden="true"></i> +7 (916) 206-83-87
+          </li>
+          <li>
+            <i class="fa fa-at" aria-hidden="true"></i> flamedance.ann&#64;gmail.com
+          </li>
+          <li>
+            <i class="fab fa-telegram" aria-hidden="true"></i> &#64;flamedance
+          </li>
+        </ul>
       </div>
     </div>
   </main>
