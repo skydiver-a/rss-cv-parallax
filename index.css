@@ -88,6 +88,10 @@ header {
   grid-template-columns: 1fr 2fr;
 }
 
+.cv .wrapper h2 {
+  font-size: 22px;
+}
+
 footer .wrapper {
   padding: 15px 0;
 
