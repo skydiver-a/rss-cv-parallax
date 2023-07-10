@@ -92,6 +92,36 @@ header {
   font-size: 22px;
 }
 
+.container {
+  width: 100%;
+}
+
+button.accordion {
+  width: 100%;
+  background-color: #FFDD00;
+  border: none;
+  outline: none;
+  text-align: left;
+  padding: 5px;
+  font-size: 22px;
+  color: #581845;
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+}
+
+button.accordion:hover,
+button.accordion.is_open {
+  background-color: #ffc802;
+}
+
+.accordion-content {
+  background-color: #FFDD00;
+  padding: 0 10px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-in-out;
+}
+
 footer .wrapper {
   padding: 15px 0;
 
