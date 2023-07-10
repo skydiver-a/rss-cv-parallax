@@ -72,6 +72,17 @@ header {
   pointer-events: none;
 }
 
+.parallax h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  color: #daebff;
+  font-size: 72px;
+  z-index: 5;
+}
+
 .cv .wrapper {
   display: grid;
   grid-template-columns: 1fr 2fr;
