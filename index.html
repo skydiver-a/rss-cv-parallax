@@ -82,48 +82,47 @@
             </ul>
           </li>
           <li><i class="fa fa-code"></i> Coding Basic Skills:
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript
+            <div class="container">
+              <button class="accordion">HTML</button>
+              <button class="accordion">CSS</button>
+              <button class="accordion">JavaScript</button>
+              <div class="accordion-content">
                 <pre>
-  function columnSum(dataArray) {
-    dataArray = dataArray[0].map((col, c) => {
-      data.map((row, r) => data[r][c]);
-    });
-    return dataArray.map(el => {
-      el.reduce((acc, i) => acc + i);
-    });
+function columnSum(dataArray) {
+  dataArray = dataArray[0].map((col, c) => {
+    data.map((row, r) => data[r][c]);
+  });
+  return dataArray.map(el => {
+    el.reduce((acc, i) => acc + i);
+  });
+}</pre>
+              </div>
+              <button class="accordion">Python</button>
+              <div class="accordion-content">
+                <pre>
+import requests
+
+url = 'http://wttr.in/?0T'
+response = requests.get(url)
+print(response.text)</pre>
+              </div>
+              <button class="accordion">C++</button>
+              <div class="accordion-content">
+                <pre>
+#include &lt;bits/stdc++.h&gt;
+using namespace std;
+
+int main() {
+  set &lt;int&gt; s;
+  int n;
+  cin &gt;&gt; n;
+  while(cin &gt;&gt; n) {
+    cout &lt;&lt; (s.insert(n).second ? "NO\n" : "YES\n");
   }
-                </pre>
-              </li>
-              <li>Python
-                <pre>
-  import requests
-
-  url = 'http://wttr.in/?0T'
-  response = requests.get(url)
-  print(response.text)
-                </pre>
-              </li>
-              <li>C++
-                <pre>
-  #include &lt;bits/stdc++.h&gt;
-  using namespace std;
-
-  int main() {
-    set &lt;int&gt; s;
-    int n;
-    cin &gt;&gt; n;
-
-    while(cin &gt;&gt; n) {
-      cout &lt;&lt; (s.insert(n).second ? "NO\n" : "YES\n");
-    }
-    return 0;
-  }
-                </pre>
-              </li>
-            </ul>
+  return 0;
+}</pre>
+              </div>
+            </div>
           </li>
           <li><i class="fa fa-code-branch"></i> Environment:
             <ul>
