@@ -29,10 +29,10 @@ header {
 
 .wrapper {
   margin: 0 auto;
-  width: 800px;
+  width: 900px;
 }
 
-.navigation {
+.navigation ul {
   display: flex;
   justify-content: space-between;
   width: 100%;
